@@ -26,6 +26,15 @@
 
 ## Description
 
+Simple backend using NestJS with TypeORM to manage MYSQL database.
+
+Application implemented with migrations working, scripts to use TypeORM. Example with entity, modules, DTOs, routes, etc.
+
+At first, you must create a file `ormconfig.json`, based on model, with your DB connections to apply migrations. For the application just create a `.env` file based on model.
+
+Thanks!
+
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
