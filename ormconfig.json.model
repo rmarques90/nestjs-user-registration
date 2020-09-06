@@ -1,0 +1,19 @@
+//arquivo de modelo para poder usar typeorm cli
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "sa",
+  "password": "password",
+  "database": "test",
+  "entities": [
+    "src/entities/**/*.entity{.ts,.js}"
+  ],
+  "migrationsTableName": "migration",
+  "migrations": [
+    "src/db/migration/*{.ts,.js}"
+  ],
+  "cli": {
+    "migrationsDir": "./src/db/migration"
+  }
+}
