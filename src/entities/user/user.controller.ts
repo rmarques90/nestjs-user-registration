@@ -27,7 +27,7 @@ export class UserController {
     }
 
     @Put(':id')
-    async updateUser(@Param('id') id: number, @Body() updateUserDTO: UpdateUserDTO, @Res() response: Response): Promise<SimpleUserDTO> {
+    async updateUser(@Param('id') id: number, @Body() updateUserDTO: UpdateUserDTO): Promise<SimpleUserDTO> {
         if (!id) {
             throw new HttpException({
                 status: HttpStatus.CONFLICT,
